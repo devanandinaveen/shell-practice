@@ -3,7 +3,13 @@ Userid=$(id -u)
 
 if [ $Userid -ne 0 ]; then 
   echo "please run this command as root user"
+  exit 1
 fi
 
 echo "Installing nginx"
  dnf install nginx -y
+
+ if [$? -ne 0 ]; then 
+  echo "installation failed"
+  else 
+  echo "installtion is sueccesful"
