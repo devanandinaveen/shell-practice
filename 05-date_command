@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+Start_time=$(date +%s)
+
+echo "script executed at $Start_time"
+
+sleep 5 
+
+END_TIME=$(date +%s)
+
+TOTALTIME=(($Start_time-$END_TIME))
+
+echo "Total time taken: $TOTALTIME"
