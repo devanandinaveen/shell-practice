@@ -8,7 +8,7 @@ fi
 
 VALIDATE()
 {
-   if [ $1 -ne 0]; then 
+   if [ $1 -ne 0 ]; then 
    echo "$2 is not done"
    exit 1
 else 
