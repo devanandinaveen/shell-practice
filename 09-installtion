@@ -13,3 +13,5 @@ echo "Installing nginx"
   echo "installation failed"
   else 
   echo "installtion is sueccesful"
+
+fi
