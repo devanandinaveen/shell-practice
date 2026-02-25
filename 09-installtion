@@ -15,3 +15,18 @@ echo "Installing nginx"
   echo "installtion is sueccesful"
 
 fi
+dnf install mysql -y
+if [$? -ne 0 ]; then 
+  echo "installation failed"
+  else 
+  echo "installtion is sueccesful"
+
+fi
+
+dnf install nodejs -y
+if [$? -ne 0 ]; then 
+  echo "installation failed"
+  else 
+  echo "installtion is sueccesful"
+
+fi
