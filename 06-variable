@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "All variables passed :$@"
+echo "Number of variables passed :$@"
+echo "script name : $#"
+echo "which directory you are in: $PWD"
+echo "who is Running this Script:$USER"
+echo "home directory of the user:$HOME"
+echo "PID of the script:$$"
+
+sleep 10 &
+echo "backgroung id is : $!"
+echo "all args passed to the script: $*"
